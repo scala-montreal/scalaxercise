@@ -36,8 +36,7 @@ Then use the sbt plugin to load the project http://blog.jetbrains.com/scala/2013
 Instructions
 ------------
 
-In the test sources you will find tests cases. Some are completed and serves as examples. Some are marked as ignore. The idea
-is to put the test active and make it pass one by one.
+In the test sources you will find test cases. Some are completed and serve as examples. Some are marked as 'ignore'. The idea is to put the test active and make it pass one by one.
 
 I suggest starting with the functions package followed by collections, recursive, patternmatching and exceptions.
 
