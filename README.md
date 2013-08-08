@@ -23,7 +23,7 @@ Run the tests using
 
     sbt test
 
-Reactive compile/test loop (will recompile and re-run the test everytime a source file has changed)
+Reactive compile/test loop (will recompile and re-run the test every time a source file has changed)
 
     sbt ~test
 
@@ -39,5 +39,5 @@ Instructions
 In the test sources you will find tests cases. Some are completed and serves as examples. Some are marked as ignore. The idea
 is to put the test active and make it pass one by one.
 
-I suggest starting with the functions package followed by collections, patternmatching and exceptions.
+I suggest starting with the functions package followed by collections, recursive, patternmatching and exceptions.
 
