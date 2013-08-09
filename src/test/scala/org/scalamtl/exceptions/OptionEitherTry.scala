@@ -1,7 +1,7 @@
 package org.scalamtl.exceptions
 
 import org.scalatest.FunSuite
-import scala.util.Try
+import scala.util.{Try, Success, Failure}
 
 class OptionEitherTry extends FunSuite {
 
@@ -10,15 +10,30 @@ class OptionEitherTry extends FunSuite {
 
   //Experiment with Option, Either, Try
   ignore("safe string to int parsing with Option") {
-    ???
+    def parse(s: String): Option[Int] = {
+      ???
+    }
+
+    assert(parse("abc") === None)
+    assert(parse("123") === Some(123))
   }
 
   ignore("safe string to int parsing with Either (return either int of error message)") {
-    ???
+    def parse(s: String): Either[String, Int] = {
+      ???
+    }
+
+    assert(parse("abc") === Left("error"))
+    assert(parse("123") === Right(123))
   }
 
-  ignore("safe string to int parsing with Try") {
-    ???
+  test("safe string to int parsing with Try") {
+    def parse(s: String): Try[Int] = {
+      ???
+    }
+
+    assert(parse("abc").isInstanceOf[Failure[Exception]])
+    assert(parse("123") === Success(123))
   }
 
 }
