@@ -1,10 +1,10 @@
-package org.scalamtl.collections
+package exercises
 
 import org.scalatest.FunSuite
 
-class CollectionsExercises extends FunSuite {
+class Exercises_B_Collections extends FunSuite {
 
-  test("create some collections") {
+  test("example - create some collections") {
     //Scala provides many collections implementations.
     //By default, the collections are immutable. If you want mutable collections,
     //you will have to import them.
@@ -46,7 +46,6 @@ class CollectionsExercises extends FunSuite {
 
   ignore("remove duplicate elements in a list") {
     def removeDuplicate(list: List[Int]): List[Int] = {
-      //Should be a one liner :)
       ???
     }
 

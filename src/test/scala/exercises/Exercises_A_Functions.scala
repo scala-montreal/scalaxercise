@@ -1,11 +1,11 @@
-package org.scalamtl.functions
+package exercises
 
 import org.scalatest.FunSuite
 import scala.collection.mutable.ListBuffer
 
-class FunctionsExercises extends FunSuite {
+class Exercises_A_Functions extends FunSuite {
 
-  test("example of function definition") {
+  test("example - function definition") {
     //The following code defines a function 'reverse' with a single String parameter and returns a String value.
     //Note that the last statement of a block produces the returned value.
     def reverse(string: String): String = {
@@ -38,21 +38,21 @@ class FunctionsExercises extends FunSuite {
     }
 
     val name = "scala"
-    assert(format(name, ???) === "!SCALA!")
+    assert(format(name, _.toUpperCase) === "!SCALA!")
   }
 
   //Scala collections are immutable by default. This means that any operation on a List for example produces
   //another list.
-  ignore("reversing a list") {
+  test("example - reversing a list") {
     val list = List(1, 2, 3)
 
-    val reverseList: List[Int] = ???
+    val reverseList: List[Int] = list.reverse
     assert(reverseList === List(3, 2, 1))
   }
 
   //One powerful function is map(). It applies a function to each element of a collection and return a new collection
   //with the modified elements.
-  test("list element transformation via map()") {
+  test("example - list element transformation via map()") {
     val list = List(1, 2, 3)
     val doubledList = List(2, 4, 6)
 
@@ -93,7 +93,6 @@ class FunctionsExercises extends FunSuite {
     //By chaining and using high order function it is possible to tell 'what' should be done.
     //The 'what' is left to the lower level functions that acts as building blocks.
     def functionalStyle(list: List[Int]): List[Int] = {
-      //should be one liner :)
       ???
     }
 
@@ -119,7 +118,7 @@ class FunctionsExercises extends FunSuite {
     //If called with only one set of parameters, it return a functions that has its first set of parameters fixed and
     //that takes the other sets of parameters.
     def times(time: Int)(arg: Int): Int = {
-      time * arg
+      ???
     }
 
     def times2: (Int) => Int  = times(2)

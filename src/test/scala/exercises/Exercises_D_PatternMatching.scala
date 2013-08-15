@@ -1,14 +1,14 @@
-package org.scalamtl.patternmatching
+package exercises
 
 import org.scalatest.FunSuite
 import java.util.NoSuchElementException
 
-class PatternMatchExercises extends FunSuite {
+class Exercises_D_PatternMatching extends FunSuite {
 
   //Pattern matching is one of the very powerful feature in Scala.
   //It allows you to execute a piece of code according to the type of the object, it's structure and
   //even it's field values.
-  test("case class and pattern matching") {
+  test("example - case class and pattern matching") {
 
     //A trait is like an interface but it can also contains implementation of some functions.
     //It is a building block in Scala for 'mixing-in' behavior into a class.
